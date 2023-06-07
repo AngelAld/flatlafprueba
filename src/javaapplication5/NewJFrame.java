@@ -7,6 +7,7 @@ package javaapplication5;
 import com.formdev.flatlaf.FlatDarkLaf;
 import com.formdev.flatlaf.FlatLightLaf;
 import com.formdev.flatlaf.intellijthemes.FlatDarkPurpleIJTheme;
+import com.formdev.flatlaf.intellijthemes.FlatLightFlatIJTheme;
 import java.awt.Dimension;
 import javax.swing.SwingUtilities;
 import javax.swing.UIManager;
@@ -262,7 +263,7 @@ boolean dark = false;
          * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
          */
         try {
-            UIManager.setLookAndFeel(new FlatDarkPurpleIJTheme());
+            UIManager.setLookAndFeel(new FlatLightFlatIJTheme());
         } catch (Exception ex) {
             System.err.println("Failed to initialize LaF");
         }
